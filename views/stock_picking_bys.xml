@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <record id="stock_picking_inhenrit_bys" model="ir.ui.view">
+      <field name="name">view.stock.picking.inhenrit</field>
+      <field name="inherit_id" ref="stock.view_picking_form" />
+      <field name="model">stock.picking</field>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='extra']/group/group" position="before">
+          <group string="Transporte" name="info_transporte">
+            <field name="x_declaration"/>
+            <field name="x_itr"/>
+            <field name="x_reempaque"/>
+            <field name="x_adicional"/>
+            <field name="x_contenedor"/>
+            <field name="x_patio"/>
+            <field name="x_cantidad"/>
+          </group>
+          
+          <group string="Transporte 2" name="info_transporte_2">
+            <field name="x_conductor"/>
+            <field name="x_cedula"/>
+            <field name="x_celular"/>
+            <field name="x_placa"/>
+            <field name="x_remolque"/>
+            <field name="x_transportadora"/>           
+          </group>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

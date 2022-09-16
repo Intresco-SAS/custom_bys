@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <template id="report_delivery_document_inherit_bys" inherit_id="stock.report_delivery_document">
+            <xpath expr="//table[@name='stock_move_table']" position="before">
+                <div>
+                    <span t-field = "o.x_declaration"/>
+                    <span t-field = "o.x_itr"/>
+                    <span t-field = "o.x_reempaque"/>
+                    <span t-field = "o.x_adicional"/>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
