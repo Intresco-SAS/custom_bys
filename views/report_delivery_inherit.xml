@@ -1,13 +1,28 @@
 <odoo>
     <data>
-        <template id="report_delivery_document_inherit_bys" inherit_id="stock.report_delivery_document">
-            <xpath expr="//table[@name='stock_move_table']" position="before">
-                <div>
-                    <span t-field = "o.x_declaration"/>
-                    <span t-field = "o.x_itr"/>
-                    <span t-field = "o.x_reempaque"/>
-                    <span t-field = "o.x_adicional"/>
-                </div>
+        <template id="report_delivery_document_inherit_bys" inherit_id="payment_report_co.report_delivery_document_inherit_bys">
+            <xpath expr="//t[@t-if='o.note']" position="before">
+                <div style="margin-top:15px"/>
+                <table class="table table-sm table-borderless">
+                    <tr>
+                        <td><b>Conductor</b></td>
+                        <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_conductor"/></td>
+                        <td class="text-center"><strong>Transportadora</strong></td>
+                        <td style="border-bottom:1px solid black;" class="text-center"><span t-field = "o.x_transportadora"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Cédula</b></td>
+                        <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_cedula"/></td>
+                        <td class="text-center"><strong >Remolque</strong></td>
+                        <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_remolque"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Celular</b></td>
+                        <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_celular"/></td>
+                        <td class="text-center"><strong >Placa</strong></td>
+                        <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_placa"/></td>
+                    </tr>
+                </table>
             </xpath>
         </template>
 
