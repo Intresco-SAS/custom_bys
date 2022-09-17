@@ -1,6 +1,68 @@
 <odoo>
     <data>
         <template id="report_delivery_document_inherit_bys" inherit_id="payment_report_co.report_delivery_document_inherit_bys">
+            
+            <xpath expr="//table[@name='stock_move_table']" position="before">
+                <div style="border:1px solid black">
+                <table class="table table-sm table-borderless">
+                    <tr>
+                        <td>Declaración de Importación :</td>
+                        <td><span t-field = "o.x_declaration"/></td>
+                        <td>Contenedor No.</td>
+                        <td><span t-field = "o.x_contenedor"/></td>
+                        <td>Patio Devolución Contenedor</td>
+                        <td><span t-field = "o.x_patio"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Requirió ITR</span> 
+                            <span style="margin-left:98px">SI</span>
+                            <t t-if="o.x_itr == True">
+                                <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
+                            </t>
+                            <t t-if="o.x_itr == False">
+                                <i style="margin-left:10px" class="fa fa-square-o" aria-hidden="true"></i>
+                            </t>
+                        
+                            <span style="margin-left:20px">NO</span>
+                            <t t-if="o.x_itr == True">
+                                <i style="margin-left:10px" class="fa fa-square-o" aria-hidden="true"></i>
+                            </t>
+                            <t t-if="o.x_itr == False">
+                                <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Requirió Reempaque</span> 
+                            <span style="margin-left:40px">SI</span>
+                            <t t-if="o.x_reempaque == True">
+                                <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
+                            </t>
+                            <t t-if="o.x_reempaque == False">
+                                <i style="margin-left:10px" class="fa fa-square-o" aria-hidden="true"></i>
+                            </t>
+                    
+                            <span style="margin-left:20px">NO</span>
+                            <t t-if="o.x_reempaque == True">
+                                <i style="margin-left:10px" class="fa fa-square-o" aria-hidden="true"></i>
+                            </t>
+                            <t t-if="o.x_reempaque == False">
+                                <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
+                            </t>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Requirió procesos logísticos adicionales :</td>
+                        <td><span t-field = "o.x_adicional"/></td>
+                        <td>Cantidad</td>
+                        <td><span t-field = "o.x_cantidad"/></td>
+                    </tr>
+                </table>
+                </div>
+            </xpath>
+
             <xpath expr="//t[@t-if='o.note']" position="before">
                 <div style="margin-top:15px"/>
                 <table class="table table-sm table-borderless">
