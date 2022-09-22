@@ -26,7 +26,7 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/stock_picking_bys.xml',
-        'views/report_delivery_inherit.xml',
+        'reports/report_delivery_inherit.xml',
         'views/stock_move_bys.xml',
     ],
     # only loaded in demonstration mode
