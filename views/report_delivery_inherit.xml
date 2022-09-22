@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="report_delivery_document_inherit_bys" inherit_id="payment_report_co.report_delivery_document_inherit_bys">
+        <template id="report_delivery_document_inherit_bys" inherit_id="payment_report_co.report_delivery_document_co">
             
             <xpath expr="//table[@name='stock_move_table']" position="before">
                 <div style="border:1px solid black">

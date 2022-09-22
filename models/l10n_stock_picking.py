@@ -22,3 +22,8 @@ class PickingInfoExtended(models.Model):
     x_transportadora = fields.Char('Transportadora')
     x_cedula = fields.Char('Cédula')
     x_celular = fields.Char('Celular')
+
+class StockMoveExtended(models.Model):
+    _inherit = "stock.move"
+
+    x_estibas = fields.Integer('Estibas')
