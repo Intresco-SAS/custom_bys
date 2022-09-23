@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','stock','payment_report_co'],
+    'depends': ['base','stock','l10n_co_res_partner','payment_report_co',],
 
     # always loaded
     'data': [
