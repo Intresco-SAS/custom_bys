@@ -95,7 +95,7 @@
         <template id="stock_report_delivery_has_serial_move_line_inherit_bys" inherit_id="stock.stock_report_delivery_has_serial_move_line">
             <xpath expr="//td[@name='move_line_lot_qty_done']" position="after">
                 <td class="text-center" name="move_line_lot_qty_done">
-                    AQUI VA EL CAMPO PERO NO SE COMO SE PUEDE LLAMAR. PARECE QUE NO EXISTE EN ESTE MODELO
+                    N/A
                 </td>
             </xpath>
         </template>
