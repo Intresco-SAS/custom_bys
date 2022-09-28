@@ -94,6 +94,10 @@
                         <cell><text>___________________</text></cell>
                         <cell><text>Firma conductor</text></cell>
                     </row>
+                    <row>
+                        <cell><text>___________________</text></cell>
+                        <cell><text>Firma conductor</text></cell>
+                    </row>
                 </table>
             </xpath>
         </template>
