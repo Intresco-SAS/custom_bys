@@ -55,7 +55,7 @@
                     </tr>
                     <tr>
                         <td>Requirió procesos logísticos adicionales :</td>
-                        <td><span t-field = "o.x_adicional"/></td>
+                        <td><span t-field = "o.required_process_ids"/></td>
                         <td>Cantidad</td>
                         <td><span t-field = "o.x_cantidad"/></td>
                     </tr>
@@ -89,6 +89,12 @@
                         <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_placa"/></td>
                     </tr>
                 </table>
+                <tr>
+                    <td><b> _______________</b></td>
+                    <td><b> Firma conductor </b></td>
+                    <td><b> Firma bodega </b></td>
+                    <td><b> firma cliente </b></td>
+                </tr>
             </xpath>
         </template>
 
