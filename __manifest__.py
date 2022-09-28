@@ -28,6 +28,7 @@
         'views/stock_picking_bys.xml',
         'reports/report_delivery_inherit.xml',
         'views/stock_move_bys.xml',
+        'data/record_required_process.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
