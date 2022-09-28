@@ -22,7 +22,7 @@ class PickingInfoExtended(models.Model):
     x_transportadora = fields.Char('Transportadora')
     x_cedula = fields.Char('Cédula')
     x_celular = fields.Char('Celular')
-    required_process_ids = fields.Many2many('stock.required_process')
+    required_process_ids = fields.Many2many('stock.required.process')
 
 class StockMoveExtended(models.Model):
     _inherit = "stock.move"
@@ -31,7 +31,7 @@ class StockMoveExtended(models.Model):
 
 class RequiredProcess(models.AbstractModel):
 
-    _name = 'stock.required_process'
+    _name = 'stock.required.process'
 
     name = fields.Char()
 

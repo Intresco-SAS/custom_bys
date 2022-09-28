@@ -1,18 +1,18 @@
 <odoo>
     <data>
-        <record id="reetiquetado" model="stock.required_process">
+        <record id="reetiquetado" model="stock.required.process">
             <field name="name">Reetiquetado</field>
         </record>
 
-        <record id="reestibado" model="stock.required_process">
+        <record id="reestibado" model="stock.required.process">
             <field name="name">Reestibado</field>
         </record>
 
-        <record id="vinipelado" model="stock.required_process">
+        <record id="vinipelado" model="stock.required.process">
             <field name="name">Vinipelado</field>
         </record>
 
-        <record id="zunchado" model="stock.required_process">
+        <record id="zunchado" model="stock.required.process">
             <field name="name">Zunchado</field>
         </record>
         
