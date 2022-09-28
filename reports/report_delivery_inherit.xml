@@ -92,21 +92,17 @@
                 <table>
                     <tr>
                         <td>
-                        <strong >___________________</strong><br/>
-                        <strong>Firma conductor</strong>
+                            <strong >___________________</strong><br/>
+                            <strong>Firma conductor</strong>
                         </td>
                         <td>
                             <strong >___________________</strong><br/>
-                        <strong>Firma bodega</strong>
+                            <strong>Firma bodega</strong>
                         </td>
-                    </tr>
-                    <tr>
-                        <cell><text>___________________</text></cell><br/>
-                        <cell><text>Firma bodega</text></cell>
-                    </tr>
-                    <tr>
-                        <cell><text>___________________</text></cell><br/>
-                        <cell><text>Firma cliente</text></cell>
+                        <td>
+                            <strong> ___________________</strong><br/>
+                            <strong> Firma cliente</strong>
+                        </td>
                     </tr>
                 </table>
             </xpath>
