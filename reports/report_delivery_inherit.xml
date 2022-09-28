@@ -89,14 +89,16 @@
                         <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_placa"/></td>
                     </tr>
                 </table>
-                <tr>
-                    <td><b> _____________________</b></td><br/>
-                    <td><b> Firma conductor </b></td><br/><br/>
-                    <td><b> _____________________</b></td><br/>
-                    <td><b> Firma bodega </b></td><br/><br/>
-                    <td><b> _____________________</b></td><br/>
-                    <td><b> firma cliente </b></td><br/><br/>
-                </tr>
+                <table>
+                    <tr>
+                        <td><b> _____________________</b></td><br/>
+                        <td><b> Firma conductor </b></td><br/><br/>
+                        <td><b> _____________________</b></td><br/>
+                        <td><b> Firma bodega </b></td><br/><br/>
+                        <td><b> _____________________</b></td><br/>
+                        <td><b> firma cliente </b></td><br/><br/>
+                    </tr>
+                </table>
             </xpath>
         </template>
 
