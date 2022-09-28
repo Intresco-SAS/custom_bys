@@ -54,7 +54,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Requirió procesos logísticos adicionales :</td>
+                        <td>Requirió procesos logísticos adicionales:</td>
                         <td><span t-field = "o.required_process_ids"/></td>
                         <td>Cantidad</td>
                         <td><span t-field = "o.x_cantidad"/></td>
