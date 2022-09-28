@@ -88,16 +88,14 @@
                         <td class="text-center"><strong >Placa</strong></td>
                         <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_placa"/></td>
                     </tr>
-                </table>
+                </table><br/>
                 <table class="table table-sm table-borderless">
                     <tr>
                         <td>
                             <strong >___________________</strong><br/>
                             <strong>Firma conductor</strong>
                         </td>
-                        <td>
-
-                        </td>
+                      
                         <td>
                             <strong>___________________</strong><br/>
                             <strong>   Firma bodega</strong>
