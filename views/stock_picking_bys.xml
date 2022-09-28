@@ -10,7 +10,7 @@
             <field name="x_declaration"/>
             <field name="x_itr"/>
             <field name="x_reempaque"/>
-            <field name="x_adicional"/>
+            <field name="required_process_ids" widget="many2many_tags"/>
             <field name="x_contenedor"/>
             <field name="x_patio"/>
             <field name="x_cantidad"/>
