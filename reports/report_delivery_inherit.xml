@@ -89,7 +89,7 @@
                         <td style="border-bottom:1px solid black" class="text-center"><span t-field = "o.x_placa"/></td>
                     </tr>
                 </table>
-                <table>
+                <table class="table table-sm table-borderless">
                     <tr>
                         <td>
                             <b><strong >___________________</strong></b><br/>
