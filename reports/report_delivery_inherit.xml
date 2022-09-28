@@ -95,8 +95,12 @@
                         <cell><text>Firma conductor</text></cell>
                     </row>
                     <row>
-                        <cell><text>___________________</text></cell>
-                        <cell><text>Firma conductor</text></cell>
+                        <cell><text>___________________</text></cell><br/>
+                        <cell><text>Firma bodega</text></cell>
+                    </row>
+                    <row>
+                        <cell><text>___________________</text></cell><br/>
+                        <cell><text>Firma cliente</text></cell>
                     </row>
                 </table>
             </xpath>
