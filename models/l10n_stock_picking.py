@@ -29,7 +29,7 @@ class StockMoveExtended(models.Model):
 
     x_estibas = fields.Integer('Estibas')
 
-class RequiredProcess(models.AbstractModel):
+class RequiredProcess(models.Model):
 
     _name = 'stock.required.process'
 
