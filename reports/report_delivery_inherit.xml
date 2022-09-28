@@ -90,14 +90,10 @@
                     </tr>
                 </table>
                 <table>
-                    <tr>
-                        <td><b> _____________________</b></td>
-                        <td><b> Firma conductor </b></td>
-                        <td><b> _____________________</b></td>
-                        <td><b> Firma bodega </b></td>
-                        <td><b> _____________________</b></td>
-                        <td><b> firma cliente </b></td>
-                    </tr>
+                    <row>
+                        <cell><text>___________________</text></cell>
+                        <cell><text>Firma conductor</text></cell>
+                    </row>
                 </table>
             </xpath>
         </template>
