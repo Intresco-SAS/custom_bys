@@ -8,11 +8,12 @@ class PickingInfoExtended(models.Model):
     x_declaration = fields.Char('Declaración de Importación')
     x_itr = fields.Boolean('Requirió ITR')
     x_reempaque = fields.Boolean('Requirió Reempaque')
-    x_adicional = fields.Selection([("1", "Reetiquetado"),
-                                    ("2", "Reestibado"),
-                                    ("3", "Vinipelado"),
-                                    ("4", "Zunchado"),
-                                    ],"Requirió procesos logísticos adicionales")
+    x_adicional = fields.Selection([
+        ("1", "Reetiquetado"),
+        ("2", "Reestibado"),
+        ("3", "Vinipelado"),
+        ("4", "Zunchado"),
+    ],"Requirió procesos logísticos adicionales")
     x_contenedor = fields.Char('Contenedor No.')
     x_patio = fields.Char('Patio Devolución Contenedor')
     x_cantidad = fields.Char('Cantidad')
@@ -22,7 +23,7 @@ class PickingInfoExtended(models.Model):
     x_transportadora = fields.Char('Transportadora')
     x_cedula = fields.Char('Cédula')
     x_celular = fields.Char('Celular')
-    required_process_ids = fields.Many2many('stock.required.process')
+    required_process_ids = fields.Many2many('stock.required.process','stock_picking_required_process_rel')
 
 class StockMoveExtended(models.Model):
     _inherit = "stock.move"
@@ -30,8 +31,8 @@ class StockMoveExtended(models.Model):
     x_estibas = fields.Integer('Estibas')
 
 class RequiredProcess(models.Model):
-
     _name = 'stock.required.process'
+    _description = 'Stock Required Process'
 
     name = fields.Char()
 

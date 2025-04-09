@@ -1,10 +1,9 @@
 <odoo>
     <data>
-        <template id="report_delivery_document_inherit_bys" inherit_id="payment_report_co.report_delivery_document_co">
+        <template id="report_delivery_document_inherit_bys" inherit_id="stock.report_delivery_document">
             
             <xpath expr="//table[@name='stock_move_table']" position="before">
-                <div style="border:1px solid black">
-                <table class="table table-sm table-borderless">
+                <table style="border:1px solid black" class="table table-sm table-borderless">
                     <tr>
                         <td>Declaración de Importación :</td>
                         <td><span t-field = "o.x_declaration"/></td>
@@ -32,6 +31,7 @@
                                 <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
                             </t>
                         </td>
+                        <td colspan="5"/>
                     </tr>
                     <tr>
                         <td>
@@ -52,22 +52,24 @@
                                 <i style="margin-left:10px" class="fa fa-check-square-o" aria-hidden="true"/>
                             </t>
                         </td>
+                        <td colspan="5"/>
                     </tr>
                     <tr>
                         <td>Requirió procesos logísticos adicionales:</td>
                         <td><span t-field = "o.required_process_ids"/></td>
                         <td>Cantidad</td>
                         <td><span t-field = "o.x_cantidad"/></td>
+                        <td/>
+                        <td/>
                     </tr>
                 </table>
-                </div>
             </xpath>
 
             <xpath expr="//table[@name='stock_move_line_table']/thead/tr" position="inside">
                 <th><strong>No. Estibas</strong></th>
             </xpath>
 
-            <xpath expr="//t[@t-if='o.note']" position="before">
+            <xpath expr="//div[@name='signature']" position="before">
                 <div style="margin-top:15px"/>
                 <table class="table table-sm table-borderless">
                     <tr>
